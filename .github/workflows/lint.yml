@@ -16,7 +16,12 @@ jobs:
 
        - name: Install Linter
          run:  pip install ruff
+         
+# The step will run the Linter
+       - name: Check the files for Linting
+         run: ruff check .
 
+         
 # This is for Gitclone in short way         
          
          
