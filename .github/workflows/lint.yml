@@ -1,0 +1,22 @@
+# What is the goal of your workflow
+# Goal : Whenever someone changes the code;
+# The linter will check if  the syntax ,indentation ,format is correct or not
+name: Auto Linter
+
+on: 
+  push:
+    paths: "*.py"
+
+jobs:
+  code:
+     runs-on: ubuntu-latest
+     steps:
+       - name: Checkout/Clone the code
+         uses: actions/checkout@v7
+
+       - name: Install Linter
+         run:  pip install ruff
+
+# This is for Gitclone in short way         
+         
+         
