@@ -1,5 +1,6 @@
 # Take year input from the user
 # Leap Year App
+
 year = int(input("Enter a year: "))
 
 # Check leap year conditions
