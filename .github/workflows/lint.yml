@@ -2,7 +2,6 @@
 # Goal : Whenever someone changes the code;
 # The linter will check if  the syntax ,indentation ,format is correct or not
 name: Auto Linter
-
 on: 
   push:
     paths: "*.py"
@@ -13,7 +12,7 @@ jobs:
      steps:
        - name: Checkout/Clone the code
          uses: actions/checkout@v7
-
+# Install python 
        - name: Set up Python
          uses: actions/setup-python@v7
          with:
